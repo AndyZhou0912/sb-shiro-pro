@@ -1,0 +1,11 @@
+# 基本的配置
+server:
+    port: 8888
+    servlet:
+        context-path:
+spring:
+    application:
+        name: springboot-shiro
+    profiles:
+        active: dev
+

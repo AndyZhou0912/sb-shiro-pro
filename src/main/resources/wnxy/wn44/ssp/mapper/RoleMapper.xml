@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wnxy.wn44.ssp.mapper.RoleMapper">
+
+
+    <resultMap id="UserRole" type="wnxy.wn44.ssp.entity.Role">
+        <id property="id" column="id"/>
+        <result property="roleName" column="role_name"/>
+        <collection property="permissions" column="id" ofType="wnxy.wn44.ssp.entity.Permission"
+                    select="wnxy.wn44.ssp.mapper.PermissionMapper.selectPermissionByRoleId"/>
+    </resultMap>
+
+
+    <select id="selectRoleByUserId" resultMap="UserRole">
+
+        select * from t_user_role ur INNER JOIN t_user u
+                                                on ur.user_id = u.id and u.id = #{userId};
+
+    </select>
+</mapper>

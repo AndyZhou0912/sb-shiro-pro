@@ -1,0 +1,24 @@
+# 需要数据源
+spring:
+    datasource:
+        password: root
+        username: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql:///shiro
+    # 模板引擎的相关配置
+    thymeleaf:
+        cache: false
+# 日志配置使用的是默认配置,如果需要定制提供 logback-spring.xml配置文件
+logging:
+    level:
+        wnxy.wn44.ssh.controller: debug
+        wnxy.wn44.ssh.service: debug
+        wnxy.wn44.ssh.mapper: debug
+# MyBatis相关配置
+mybatis:
+    mapper-locations: classpath:/mapper/*.xml
+    configuration:
+        map-underscore-to-camel-case: true
+        lazy-loading-enabled: true
+    type-aliases-package: wnxy.wn44.ssp.entity
+

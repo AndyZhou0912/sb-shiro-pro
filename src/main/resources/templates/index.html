@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="UTF-8">
+    <title>This is index</title>
+</head>
+<body>
+    <div shiro:hasPermission="user:add">
+        <a th:href="@{/user/add}">添加用户</a>
+    </div>
+
+    <!-- 如果权限判断不通过，这个div是不会在页面上显示出来的-->
+    <div shiro:hasPermission="user:update">
+        <a th:href="@{/user/update}">修改用户</a>
+    </div>
+
+    <div shiro:hasPermission="user:del">
+        <a th:href="@{/user/del}">删除用户</a>
+    </div>
+
+    <div shiro:hasPermission="user:select">
+        <a th:href="@{/user/select}">查询用户</a>
+    </div>
+
+    <a th:href="@{/user/toLogin}">登录</a>
+
+    <a th:href="@{/logout}">登出</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wnxy.wn44.ssp.mapper.UserMapper">
+
+    <resultMap id="UserRoleMapper" type="wnxy.wn44.ssp.entity.User">
+        <id property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="password" column="password"/>
+        <collection property="roleSet" column="id" ofType="wnxy.wn44.ssp.entity.Role"
+                    select="wnxy.wn44.ssp.mapper.RoleMapper.selectRoleByUserId"/>
+    </resultMap>
+
+
+    <select id="selectUserByUserName" resultMap="UserRoleMapper">
+        select * from t_user where user_name = #{userName};
+    </select>
+</mapper>
