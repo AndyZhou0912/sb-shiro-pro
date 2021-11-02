@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa0d52d-46cf-4110-89b4-e7e3eed9c789" name="Default Changelist" comment="">
+    <list default="true" id="ffa0d52d-46cf-4110-89b4-e7e3eed9c789" name="Default Changelist" comment="更改md文档">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/62ab877c-81d1-46fa-acb9-6a0db443020d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/62ab877c-81d1-46fa-acb9-6a0db443020d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wnxy/wn44/ssp/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/wnxy/wn44/ssp/mapper/UserMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,8 +166,18 @@
       <workItem from="1635475735527" duration="4655000" />
       <workItem from="1635487905553" duration="9161000" />
       <workItem from="1635499363413" duration="2298000" />
-      <workItem from="1635557538394" duration="15409000" />
+      <workItem from="1635557538394" duration="17030000" />
+      <workItem from="1635757916160" duration="43000" />
+      <workItem from="1635824221669" duration="5170000" />
     </task>
+    <task id="LOCAL-00001" summary="更改md文档">
+      <created>1635580498580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635580498580</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,5 +193,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更改md文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改md文档" />
   </component>
 </project>

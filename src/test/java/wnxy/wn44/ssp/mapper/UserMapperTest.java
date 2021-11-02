@@ -3,8 +3,6 @@ package wnxy.wn44.ssp.mapper;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.BeforeClass;
-import org.junit.Test;
-import wnxy.wn44.ssp.entity.User;
 
 public class UserMapperTest {
 
@@ -18,9 +16,5 @@ public class UserMapperTest {
     }
 
 
-    @Test
-    public void testSelectUserByUserName() {
-        User user = mapper.selectUserByUserName("zhangsan");
-        System.out.println(user);
-    }
+
 }
